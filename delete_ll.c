@@ -44,7 +44,7 @@ void deletenode(struct node ** head_ref,int key)      //deletion of node OF GIVE
         free(temp);
 }
 
-void deletepos(struct node ** head_ref,int pos)
+void deletepos(struct node ** head_ref,int pos)   //delete the element present at a particular position
 {
     int i;
     struct node *temp=*head_ref,*prev;
@@ -62,7 +62,7 @@ void deletepos(struct node ** head_ref,int pos)
     free(temp);
 }
 
-void dellist(struct node** head_ref)
+void dellist(struct node** head_ref)               //delete full list
 {
     struct node* temp=*head_ref;
     struct node* nex;
